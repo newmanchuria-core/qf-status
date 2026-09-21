@@ -3,9 +3,6 @@
 owner: newmanchuria-core
 repo: qf-status
 
-# 品牌化状态页模板（QuickFind fork；含 logo/favicon/品牌样式）
-customStatusWebsitePackage: "github:newmanchuria-core/status-page"
-
 # 首屏介绍（支持 Markdown）
 introTitle: "**QuickFind** 服务运行状态"
 introMessage: "本页面实时展示 QuickFind 官网、Releases 分发站、自动更新源与云端服务的可用性，数据每 5 分钟自动刷新。"
@@ -71,8 +68,15 @@ status-website:
         --tag-color: #e2e8f0;
       }
     }
-    article { border-radius: 10px; }
+    article { border-radius: 12px; }
+    nav { font-weight: 400; }
     nav .logo img { border-radius: 8px; }
+    .container { max-width: 860px; }
+    footer { font-size: 13px; }
+    @media (max-width: 600px) {
+      .container { padding: 0 1.1rem; }
+      nav ul a { padding: 1.2rem 0.9rem; }
+    }
 
 # 中文文案覆盖
 i18n:
