@@ -5,18 +5,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/www.quickfindapp.com.ico",
     "slug": "官网首页",
     "status": "down",
-    "uptime": "13.52%",
-    "uptimeDay": "13.52%",
-    "uptimeWeek": "13.52%",
-    "uptimeMonth": "13.52%",
-    "uptimeYear": "13.52%",
+    "uptime": "3.17%",
+    "uptimeDay": "3.17%",
+    "uptimeWeek": "3.17%",
+    "uptimeMonth": "3.17%",
+    "uptimeYear": "3.17%",
     "time": 115,
     "timeDay": 115,
     "timeWeek": 115,
     "timeMonth": 115,
     "timeYear": 115,
     "dailyMinutesDown": {
-      "2026-09-21": 2
+      "2026-09-21": 8
     }
   },
   {
@@ -25,18 +25,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/admin.quickfindapp.com.ico",
     "slug": "管理后台",
     "status": "down",
-    "uptime": "21.51%",
-    "uptimeDay": "21.51%",
-    "uptimeWeek": "21.51%",
-    "uptimeMonth": "21.51%",
-    "uptimeYear": "21.51%",
+    "uptime": "4.14%",
+    "uptimeDay": "4.14%",
+    "uptimeWeek": "4.14%",
+    "uptimeMonth": "4.14%",
+    "uptimeYear": "4.14%",
     "time": 1459,
     "timeDay": 1459,
     "timeWeek": 1459,
     "timeMonth": 1459,
     "timeYear": 1459,
     "dailyMinutesDown": {
-      "2026-09-21": 1
+      "2026-09-21": 8
     }
   },
   {
@@ -45,18 +45,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/releases.quickfindapp.com.ico",
     "slug": "releases",
     "status": "down",
-    "uptime": "28.45%",
-    "uptimeDay": "28.45%",
-    "uptimeWeek": "28.45%",
-    "uptimeMonth": "28.45%",
-    "uptimeYear": "28.45%",
+    "uptime": "4.56%",
+    "uptimeDay": "4.56%",
+    "uptimeWeek": "4.56%",
+    "uptimeMonth": "4.56%",
+    "uptimeYear": "4.56%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-09-21": 1
+      "2026-09-21": 7
     }
   },
   {
@@ -65,18 +65,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/releases.quickfindapp.com.ico",
     "slug": "releases-latest-yml",
     "status": "down",
-    "uptime": "41.60%",
-    "uptimeDay": "41.60%",
-    "uptimeWeek": "41.60%",
-    "uptimeMonth": "41.60%",
-    "uptimeYear": "41.60%",
+    "uptime": "4.80%",
+    "uptimeDay": "4.80%",
+    "uptimeWeek": "4.80%",
+    "uptimeMonth": "4.80%",
+    "uptimeYear": "4.80%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-09-21": 1
+      "2026-09-21": 7
     }
   },
   {
@@ -84,24 +84,6 @@
     "url": "https://mgbuwpnbfdogdunluyqa.supabase.co/rest/v1/",
     "icon": "https://icons.duckduckgo.com/ip3/mgbuwpnbfdogdunluyqa.supabase.co.ico",
     "slug": "supabase-a-rest",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 106,
-    "timeDay": 106,
-    "timeWeek": 106,
-    "timeMonth": 106,
-    "timeYear": 106,
-    "dailyMinutesDown": {}
-  },
-  {
-    "name": "Supabase B Auth 健康",
-    "url": "https://kcbkotryhafxcbvyceft.supabase.co/auth/v1/health",
-    "icon": "https://icons.duckduckgo.com/ip3/kcbkotryhafxcbvyceft.supabase.co.ico",
-    "slug": "supabase-b-auth",
     "status": "up",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
@@ -116,6 +98,24 @@
     "dailyMinutesDown": {}
   },
   {
+    "name": "Supabase B Auth 健康",
+    "url": "https://kcbkotryhafxcbvyceft.supabase.co/auth/v1/health",
+    "icon": "https://icons.duckduckgo.com/ip3/kcbkotryhafxcbvyceft.supabase.co.ico",
+    "slug": "supabase-b-auth",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 116,
+    "timeDay": 116,
+    "timeWeek": 116,
+    "timeMonth": 116,
+    "timeYear": 116,
+    "dailyMinutesDown": {}
+  },
+  {
     "name": "GitHub Releases 端点",
     "url": "https://github.com/newmanchuria-core/quickfind/releases/latest",
     "icon": "https://icons.duckduckgo.com/ip3/github.com.ico",
@@ -126,11 +126,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 591,
-    "timeDay": 591,
-    "timeWeek": 591,
-    "timeMonth": 591,
-    "timeYear": 591,
+    "time": 615,
+    "timeDay": 615,
+    "timeWeek": 615,
+    "timeMonth": 615,
+    "timeYear": 615,
     "dailyMinutesDown": {}
   },
   {
@@ -139,16 +139,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/releases.quickfindapp.com.ico",
     "slug": "r2",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "4.93%",
+    "uptimeDay": "4.93%",
+    "uptimeWeek": "4.93%",
+    "uptimeMonth": "4.93%",
+    "uptimeYear": "4.93%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-09-21": 7
+    }
   }
 ]
