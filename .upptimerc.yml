@@ -1,19 +1,25 @@
-# QuickFind Upptime 状态站配置（美化版）
+# QuickFind Upptime 状态站配置
 # 文档：https://upptime.js.org/docs/configuration
 owner: newmanchuria-core
 repo: qf-status
 
+# 首屏介绍（支持 Markdown）
+introTitle: "**QuickFind** 服务运行状态"
+introMessage: "本页面实时展示 QuickFind 官网、Releases 分发站、自动更新源与云端服务的可用性，数据每 5 分钟自动刷新。"
+
 status-website:
+  cname: status.quickfindapp.com
   name: QuickFind 系统状态
   url: https://status.quickfindapp.com
-  baseUrl: https://newmanchuria-core.github.io/qf-status
-  theme: auto            # 跟随系统明暗，与官网一致
-  locale: zh-CN
-  logo: https://www.quickfindapp.com/favicon.svg
-  showUpptimeLogo: false
-  useEmoji: true
-  introTitle: QuickFind 系统状态
-  introDescription: 实时监测 QuickFind 官网、管理后台、Releases 分发站与后端依赖的可用性与响应时间。全部指标每 5 分钟自动探测。
+  # 不固定主题，自动跟随系统明暗模式
+  logoUrl: /logo.svg
+  logoHref: https://status.quickfindapp.com
+  faviconSvg: /favicon.svg
+  metaTags:
+    - name: description
+      content: QuickFind 官网、Releases 分发站与云端服务的实时运行状态
+    - name: theme-color
+      content: "#2563eb"
   navbar:
     - title: 官网
       href: https://www.quickfindapp.com
@@ -21,65 +27,136 @@ status-website:
       href: https://releases.quickfindapp.com
     - title: 管理后台
       href: https://admin.quickfindapp.com
-    - title: 隐私政策
-      href: https://www.quickfindapp.com/privacy.html
-    - title: 服务条款
-      href: https://www.quickfindapp.com/terms.html
-    - title: GitHub
-      href: https://github.com/newmanchuria-core/quickfind
   footer:
-    - title: 官网
-      href: https://www.quickfindapp.com
-    - title: Releases
-      href: https://releases.quickfindapp.com
-    - title: 管理后台
-      href: https://admin.quickfindapp.com
     - title: 隐私政策
       href: https://www.quickfindapp.com/privacy.html
     - title: 服务条款
       href: https://www.quickfindapp.com/terms.html
-    - title: GitHub
-      href: https://github.com/newmanchuria-core/quickfind
+  # 品牌色覆盖（QuickFind 蓝 #2563eb / 青 #06b6d4）
+  css: |
+    :root {
+      --body-background-color: #f6f8fc;
+      --body-text-color: #0f172a;
+      --card-background-color: #ffffff;
+      --nav-background-color: #ffffff;
+      --nav-border-bottom-color: #e2e8f0;
+      --nav-current-border-bottom-color: #2563eb;
+      --card-border-color: #e2e8f0;
+      --up-border-left-color: #16a34a;
+      --tag-up-background-color: #16a34a;
+      --down-border-left-color: #dc2626;
+      --down-background-color: #fee2e2;
+      --tag-down-background-color: #dc2626;
+      --degraded-border-left-color: #d97706;
+      --tag-degraded-background-color: #d97706;
+      --change-background-color: #d97706;
+      --error-button-border-color: #1d4ed8;
+      --error-button-background-color: #2563eb;
+      --submit-button-border-color: #1d4ed8;
+      --submit-button-background-color: #2563eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --body-background-color: #0b1220;
+        --body-text-color: #e2e8f0;
+        --card-background-color: #111a2e;
+        --nav-background-color: #111a2e;
+        --nav-border-bottom-color: #1e293b;
+        --nav-current-border-bottom-color: #3b82f6;
+        --card-border-color: #1e293b;
+        --down-background-color: #3f1418;
+        --tag-color: #e2e8f0;
+      }
+    }
+    article { border-radius: 10px; }
+    nav .logo img { border-radius: 8px; }
 
-# 监控项（名称前缀即分组：官网 / 后台 / 分发 / 后端依赖 / 代码托管）
+# 中文文案覆盖
+i18n:
+  locale: zh-CN
+  activeIncidents: 当前故障
+  allSystemsOperational: 所有系统运行正常
+  liveStatus: 实时状态
+  overallUptime: 总体可用率：$UPTIME
+  overallUptimeTitle: 总体可用率
+  averageResponseTime: 平均响应时间：$TIMEms
+  averageResponseTimeTitle: 平均响应
+  sevelDayResponseTime: 近 7 天响应时间
+  responseTimeMs: 响应时间 (ms)
+  up: 正常
+  down: 故障
+  degraded: 降级
+  ms: ms
+  loading: 加载中
+  pastIncidents: 历史故障
+  incidentTitle: 故障 #$NUMBER 详情
+  incidentDetails: 故障详情
+  incidentFixed: 已修复
+  incidentOngoing: 处理中
+  incidentOpenedAt: 发生于
+  incidentClosedAt: 恢复于
+  incidentReport: 故障 #$NUMBER 报告 →
+  incidentBack: ← 返回全部故障
+  activeIncidentSummary: 发生于 $DATE，共 $POSTS 条更新
+  pastIncidentsResolved: 历时 $MINUTES 分钟，$POSTS 条更新后恢复
+  incidentViewOnGitHub: 在 GitHub 查看与订阅
+  incidentCommentSummary: $AUTHOR 于 $DATE 发布
+  navGitHub: GitHub
+  footer: 本页面由 [Upptime](https://upptime.js.org) 驱动 · [开源仓库]($REPO)
+  scheduledMaintenance: 计划维护
+  pastScheduledMaintenance: 历史计划维护
+  scheduledMaintenanceSummaryStarts: 将于 $DATE 开始，持续 $DURATION 分钟
+  scheduledMaintenanceSummaryStarted: 于 $DATE 开始，持续 $DURATION 分钟
+  startedAt: 开始于
+  startsAt: 开始于
+  duration: 持续时间
+  incidentCompleted: 已完成
+  incidentScheduled: 已计划
+  errorTitle: 发生错误
+  errorIntro: 获取最新状态时发生错误
+  errorText: 请稍后重试
+  errorHome: 返回首页
+  rateLimitExceededTitle: 请求频率超限
+  rateLimitExceededIntro: 您每小时的请求次数已用完，请稍后再试
+  rateLimitExceededWhatDoesErrorMean: 这是什么意思
+  rateLimitExceededErrorMeaning: 本页面通过 GitHub API 获取实时状态，默认每 IP 每小时可请求 60 次，您已用完该额度
+  rateLimitExceededErrorHowCanFix: 如何解决
+  rateLimitExceededErrorFix: 等待一小时后额度将自动恢复；也可以添加 GitHub 个人访问令牌以提高到每小时 5000 次
+  rateLimitExceededGeneratePAT: 了解如何生成个人访问令牌
+  rateLimitExceededHasSet: 已设置个人访问令牌
+  rateLimitExceededRemoveToken: 移除令牌
+  rateLimitExceededGitHubPAT: GitHub 个人访问令牌
+  rateLimitExceededCopyPastePAT: 粘贴您的个人访问令牌
+  rateLimitExceededSaveToken: 保存令牌
+
+# 监控项（每 5 分钟探测一次）
 sites:
-  # —— 官网 ——
-  - name: 官网 · 首页
+  - name: 官网首页
     url: https://www.quickfindapp.com/
     expectedStatusCodes: [200, 301, 302]
-  # —— 后台 ——
-  - name: 后台 · 管理控制台
+  - name: 管理后台
     url: https://admin.quickfindapp.com/
     expectedStatusCodes: [200, 301, 302, 401]
-  # —— 分发 ——
-  - name: 分发 · Releases 首页
+  - name: Releases 分发站首页
     url: https://releases.quickfindapp.com/
     expectedStatusCodes: [200, 301, 302]
-  - name: 分发 · 更新源 latest.yml
+  - name: 自动更新源 latest.yml
     url: https://releases.quickfindapp.com/releases/latest.yml
     expectedStatusCodes: [200]
-  - name: 分发 · R2 资产端点
-    url: https://releases.quickfindapp.com/QuickFind-Setup-1.0.0-x64.exe
-    expectedStatusCodes: [200, 206, 301, 302, 403]
-  # —— 后端依赖 ——
-  - name: 后端 · Supabase A REST
+  - name: Supabase A REST 健康
     url: https://mgbuwpnbfdogdunluyqa.supabase.co/rest/v1/
     expectedStatusCodes: [200, 401, 404]
-  - name: 后端 · Supabase B Auth
+  - name: Supabase B Auth 健康
     url: https://kcbkotryhafxcbvyceft.supabase.co/auth/v1/health
     expectedStatusCodes: [200, 401]
-  # —— 代码托管 ——
-  - name: 代码 · GitHub Releases
+  - name: GitHub Releases 端点
     url: https://github.com/newmanchuria-core/quickfind/releases/latest
     expectedStatusCodes: [200, 301, 302]
+  - name: Windows 安装包（GitHub 资产）
+    url: https://github.com/newmanchuria-core/quickfind/releases/download/v1.0.0/QuickFind-Setup-1.0.0-x64.exe
+    expectedStatusCodes: [200, 206, 301, 302]
 
-# 第三方依赖状态页（仅在 navbar/footer 以链接展示，不主动探测）：
-#   Resend     https://status.resend.com
-#   Cloudflare https://www.cloudflarestatus.com
-#   Supabase   https://status.supabase.com
-#   GitHub     https://www.githubstatus.com
-
-# 不监控敏感写接口（/api/feedback、Resend send-email），避免触发真实邮件或写库。
+# 不监控敏感写接口（/api/feedback、send-email），避免触发真实邮件或写库。
 
 branch: main
 commitChange: true
