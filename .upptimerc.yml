@@ -91,13 +91,10 @@ status-website:
       article:hover { box-shadow: 0 8px 24px rgba(0,0,0,.35); }
       nav ul a:hover { color: #60a5fa; }
     }
-    @media (max-width: 720px) {
-      .container { padding: 0 1.1rem; flex-wrap: wrap !important; justify-content: center !important; }
-      nav { overflow-x: visible !important; white-space: normal !important; margin-bottom: 1.25rem !important; }
-      nav .logo { float: none !important; margin: 0.5rem 0.5rem 0 !important; }
-      nav ul { flex-wrap: wrap !important; }
-      nav ul a { padding: 0.7rem 0.85rem !important; font-size: 14px !important; }
-      nav .logo img { height: 2rem !important; }
+    @media (max-width: 600px) {
+      .container { padding: 0 1.1rem; }
+      nav ul a { padding: 1.2rem 0.75rem; font-size: 14px; }
+      nav .logo img { height: 2rem; }
     }
 
 # 中文文案覆盖
@@ -186,6 +183,9 @@ sites:
     expectedStatusCodes: [200, 301, 302]
   - name: Windows 安装包（GitHub 资产）
     url: https://github.com/newmanchuria-core/quickfind/releases/download/v1.0.0/QuickFind-Setup-1.0.0-x64.exe
+    expectedStatusCodes: [200, 206, 301, 302]
+  - name: R2 分发（安装包）
+    url: https://cdn-r2.quickfindapp.com/releases/v1.0.0/QuickFind-Setup-1.0.0-x64.exe
     expectedStatusCodes: [200, 206, 301, 302]
 
 # 不监控敏感写接口（/api/feedback、send-email），避免触发真实邮件或写库。
