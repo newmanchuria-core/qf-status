@@ -96,6 +96,17 @@ status-website:
       nav ul a { padding: 1.2rem 0.75rem; font-size: 14px; }
       nav .logo img { height: 2rem; }
     }
+    /* 窄屏导航强制换行居中，消除横向滚动条（覆盖 Svelte scoped 样式） */
+    @media (max-width: 720px) {
+      nav, nav ul {
+        overflow-x: visible !important;
+        flex-wrap: wrap !important;
+        white-space: normal !important;
+        justify-content: center !important;
+      }
+      nav ul li { flex: 0 0 auto !important; white-space: nowrap; }
+      nav::-webkit-scrollbar, nav ul::-webkit-scrollbar { display: none !important; }
+    }
 
 # 中文文案覆盖
 i18n:
