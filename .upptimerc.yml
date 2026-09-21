@@ -34,16 +34,6 @@ status-website:
     - title: GitHub
       href: https://github.com/newmanchuria-core/quickfind
       target: _blank
-  footer:
-    - title: 隐私政策
-      href: https://www.quickfindapp.com/privacy.html
-    - title: 服务条款
-      href: https://www.quickfindapp.com/terms.html
-    - title: 网站地图
-      href: https://www.quickfindapp.com/sitemap.html
-    - title: GitHub
-      href: https://github.com/newmanchuria-core/qf-status
-      target: _blank
   # 品牌色覆盖（QuickFind 蓝 #2563eb / 青 #06b6d4）
   css: |
     :root {
@@ -138,7 +128,7 @@ i18n:
   incidentViewOnGitHub: 在 GitHub 查看与订阅
   incidentCommentSummary: $AUTHOR 于 $DATE 发布
   navGitHub: GitHub
-  footer: 本页面由 [Upptime](https://upptime.js.org) 驱动 · [开源仓库]($REPO)
+  footer: "[隐私政策](https://www.quickfindapp.com/privacy.html) · [服务条款](https://www.quickfindapp.com/terms.html) · [网站地图](https://www.quickfindapp.com/sitemap.html) · [GitHub](https://github.com/newmanchuria-core/qf-status) ｜ 本页面由 [Upptime](https://upptime.js.org) 驱动"
   scheduledMaintenance: 计划维护
   pastScheduledMaintenance: 历史计划维护
   scheduledMaintenanceSummaryStarts: 将于 $DATE 开始，持续 $DURATION 分钟
