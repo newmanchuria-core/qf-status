@@ -5,18 +5,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/www.quickfindapp.com.ico",
     "slug": "官网首页",
     "status": "down",
-    "uptime": "3.17%",
-    "uptimeDay": "3.17%",
-    "uptimeWeek": "3.17%",
-    "uptimeMonth": "3.17%",
-    "uptimeYear": "3.17%",
+    "uptime": "1.14%",
+    "uptimeDay": "1.14%",
+    "uptimeWeek": "1.14%",
+    "uptimeMonth": "1.14%",
+    "uptimeYear": "1.14%",
     "time": 115,
     "timeDay": 115,
     "timeWeek": 115,
     "timeMonth": 115,
     "timeYear": 115,
     "dailyMinutesDown": {
-      "2026-09-21": 8
+      "2026-09-21": 23
     }
   },
   {
@@ -25,18 +25,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/admin.quickfindapp.com.ico",
     "slug": "管理后台",
     "status": "down",
-    "uptime": "4.14%",
-    "uptimeDay": "4.14%",
-    "uptimeWeek": "4.14%",
-    "uptimeMonth": "4.14%",
-    "uptimeYear": "4.14%",
+    "uptime": "1.45%",
+    "uptimeDay": "1.45%",
+    "uptimeWeek": "1.45%",
+    "uptimeMonth": "1.45%",
+    "uptimeYear": "1.45%",
     "time": 1459,
     "timeDay": 1459,
     "timeWeek": 1459,
     "timeMonth": 1459,
     "timeYear": 1459,
     "dailyMinutesDown": {
-      "2026-09-21": 8
+      "2026-09-21": 23
     }
   },
   {
@@ -45,18 +45,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/releases.quickfindapp.com.ico",
     "slug": "releases",
     "status": "down",
-    "uptime": "4.56%",
-    "uptimeDay": "4.56%",
-    "uptimeWeek": "4.56%",
-    "uptimeMonth": "4.56%",
-    "uptimeYear": "4.56%",
+    "uptime": "1.56%",
+    "uptimeDay": "1.56%",
+    "uptimeWeek": "1.56%",
+    "uptimeMonth": "1.56%",
+    "uptimeYear": "1.56%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-09-21": 7
+      "2026-09-21": 23
     }
   },
   {
@@ -65,18 +65,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/releases.quickfindapp.com.ico",
     "slug": "releases-latest-yml",
     "status": "down",
-    "uptime": "4.80%",
-    "uptimeDay": "4.80%",
-    "uptimeWeek": "4.80%",
-    "uptimeMonth": "4.80%",
-    "uptimeYear": "4.80%",
+    "uptime": "1.58%",
+    "uptimeDay": "1.58%",
+    "uptimeWeek": "1.58%",
+    "uptimeMonth": "1.58%",
+    "uptimeYear": "1.58%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-09-21": 7
+      "2026-09-21": 22
     }
   },
   {
@@ -90,11 +90,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 114,
-    "timeDay": 114,
-    "timeWeek": 114,
-    "timeMonth": 114,
-    "timeYear": 114,
+    "time": 124,
+    "timeDay": 124,
+    "timeWeek": 124,
+    "timeMonth": 124,
+    "timeYear": 124,
     "dailyMinutesDown": {}
   },
   {
@@ -108,11 +108,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 116,
-    "timeDay": 116,
-    "timeWeek": 116,
-    "timeMonth": 116,
-    "timeYear": 116,
+    "time": 127,
+    "timeDay": 127,
+    "timeWeek": 127,
+    "timeMonth": 127,
+    "timeYear": 127,
     "dailyMinutesDown": {}
   },
   {
@@ -126,11 +126,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 615,
-    "timeDay": 615,
-    "timeWeek": 615,
-    "timeMonth": 615,
-    "timeYear": 615,
+    "time": 516,
+    "timeDay": 516,
+    "timeWeek": 516,
+    "timeMonth": 516,
+    "timeYear": 516,
     "dailyMinutesDown": {}
   },
   {
@@ -139,18 +139,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/releases.quickfindapp.com.ico",
     "slug": "r2",
     "status": "down",
-    "uptime": "4.93%",
-    "uptimeDay": "4.93%",
-    "uptimeWeek": "4.93%",
-    "uptimeMonth": "4.93%",
-    "uptimeYear": "4.93%",
+    "uptime": "1.55%",
+    "uptimeDay": "1.55%",
+    "uptimeWeek": "1.55%",
+    "uptimeMonth": "1.55%",
+    "uptimeYear": "1.55%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-09-21": 7
+      "2026-09-21": 22
     }
   }
 ]
