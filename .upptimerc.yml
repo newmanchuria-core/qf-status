@@ -12,9 +12,9 @@ status-website:
   name: QuickFind 系统状态
   url: https://status.quickfindapp.com
   # 不固定主题，自动跟随系统明暗模式
-  logoUrl: https://raw.githubusercontent.com/newmanchuria-core/qf-status/main/assets/logo.svg
+  logoUrl: https://raw.githubusercontent.com/newmanchuria-core/qf-status/master/assets/logo.svg
   logoHref: https://status.quickfindapp.com
-  faviconSvg: https://raw.githubusercontent.com/newmanchuria-core/qf-status/main/assets/favicon.svg
+  faviconSvg: https://raw.githubusercontent.com/newmanchuria-core/qf-status/master/assets/favicon.svg
   metaTags:
     - name: description
       content: QuickFind 官网、Releases 分发站与云端服务的实时运行状态
@@ -23,15 +23,27 @@ status-website:
   navbar:
     - title: 官网
       href: https://www.quickfindapp.com
+    - title: 下载
+      href: https://www.quickfindapp.com/download.html
+    - title: FAQ
+      href: https://www.quickfindapp.com/faq.html
     - title: Releases
       href: https://releases.quickfindapp.com
     - title: 管理后台
       href: https://admin.quickfindapp.com
+    - title: GitHub
+      href: https://github.com/newmanchuria-core/quickfind
+      target: _blank
   footer:
     - title: 隐私政策
       href: https://www.quickfindapp.com/privacy.html
     - title: 服务条款
       href: https://www.quickfindapp.com/terms.html
+    - title: 网站地图
+      href: https://www.quickfindapp.com/sitemap.html
+    - title: GitHub
+      href: https://github.com/newmanchuria-core/qf-status
+      target: _blank
   # 品牌色覆盖（QuickFind 蓝 #2563eb / 青 #06b6d4）
   css: |
     :root {
@@ -68,14 +80,31 @@ status-website:
         --tag-color: #e2e8f0;
       }
     }
-    article { border-radius: 12px; }
-    nav { font-weight: 400; }
-    nav .logo img { border-radius: 8px; }
+    article { border-radius: 12px; transition: box-shadow .18s ease; }
+    article:hover { box-shadow: 0 8px 24px rgba(37,99,235,.10); }
+    nav {
+      font-weight: 400;
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(255,255,255,.82);
+      -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+    }
+    nav .logo img { border-radius: 8px; height: 2.4rem; }
+    nav ul a { transition: color .15s ease; }
+    nav ul a:hover { color: #2563eb; }
+    [aria-current] { border-bottom: 2px solid #2563eb; }
     .container { max-width: 860px; }
-    footer { font-size: 13px; }
+    .tag { border-radius: 999px; }
+    .graph, img.graph { border-radius: 10px; }
+    footer { font-size: 13px; opacity: .85; }
+    @media (prefers-color-scheme: dark) {
+      nav { background: rgba(17,26,46,.82); }
+      article:hover { box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+      nav ul a:hover { color: #60a5fa; }
+    }
     @media (max-width: 600px) {
       .container { padding: 0 1.1rem; }
-      nav ul a { padding: 1.2rem 0.9rem; }
+      nav ul a { padding: 1.2rem 0.75rem; font-size: 14px; }
+      nav .logo img { height: 2rem; }
     }
 
 # 中文文案覆盖
@@ -165,7 +194,7 @@ sites:
 
 # 不监控敏感写接口（/api/feedback、send-email），避免触发真实邮件或写库。
 
-branch: main
+branch: master
 commitChange: true
 commitAuthorName: quickfind-status-bot
 commitAuthorEmail: status@quickfindapp.com
