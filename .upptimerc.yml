@@ -12,9 +12,9 @@ status-website:
   name: QuickFind 系统状态
   url: https://status.quickfindapp.com
   # 不固定主题，自动跟随系统明暗模式
-  logoUrl: /logo.svg
+  logoUrl: https://raw.githubusercontent.com/newmanchuria-core/qf-status/main/assets/logo.svg
   logoHref: https://status.quickfindapp.com
-  faviconSvg: /favicon.svg
+  faviconSvg: https://raw.githubusercontent.com/newmanchuria-core/qf-status/main/assets/favicon.svg
   metaTags:
     - name: description
       content: QuickFind 官网、Releases 分发站与云端服务的实时运行状态
