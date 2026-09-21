@@ -4,6 +4,7 @@ owner: newmanchuria-core
 repo: qf-status
 # 站点名（显示在状态页标题）
 status-website:
+  cname: status.quickfindapp.com
   name: QuickFind 系统状态
   url: https://status.quickfindapp.com
   baseUrl: https://newmanchuria-core.github.io/qf-status
