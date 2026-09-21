@@ -7,7 +7,6 @@ status-website:
   cname: status.quickfindapp.com
   name: QuickFind 系统状态
   url: https://status.quickfindapp.com
-  baseUrl: https://newmanchuria-core.github.io/qf-status
   theme: light
   locale: zh-CN
   navbar:
