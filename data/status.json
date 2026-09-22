@@ -1,0 +1,53 @@
+{
+  "services": [
+    {
+      "name": "官网首页",
+      "status": "operational"
+    },
+    {
+      "name": "Releases 分发站",
+      "status": "operational"
+    },
+    {
+      "name": "自动更新源",
+      "status": "operational"
+    },
+    {
+      "name": "管理后台",
+      "status": "operational"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "incident_1790094140072",
+      "title_zh_cn": "Releases 分发站短时响应变慢",
+      "title_zh_tw": "Releases 分發站短暫回應變慢",
+      "title_en": "Releases CDN temporarily degraded",
+      "body_zh_cn": "<p>2026-09-23 约 14:00 起，部分用户反映 Releases 分发站响应变慢。工程组已定位为 CDN 边缘节点缓存刷新延迟，正在处理中。</p>",
+      "body_zh_tw": "<p>2026-09-23 約 14:00 起，部分使用者反映 Releases 分發站回應變慢。</p>",
+      "body_en": "<p>Since ~14:00 on 2026-09-23 some users reported slow responses from the Releases CDN. Under investigation.</p>",
+      "impact": "Releases 分发站 / 自动更新源",
+      "status": "monitoring",
+      "created_at": "2026-09-22T16:22:20.072Z",
+      "updated_at": "2026-09-22T16:22:20.073Z"
+    }
+  ],
+  "maintenance": [
+    {
+      "id": "maint_1790094140073",
+      "title_zh_cn": "Supabase 数据库例行维护",
+      "title_zh_tw": "Supabase 資料庫例行維護",
+      "title_en": "Scheduled Supabase maintenance",
+      "body_zh_cn": "<p>计划对 Project A 数据库进行例行索引优化，期间查询可能出现短暂抖动，预计 15 分钟内完成。</p>",
+      "body_zh_tw": "<p>計劃對 Project A 資料庫進行例行索引最佳化。</p>",
+      "body_en": "<p>Scheduled routine index optimization on Project A; brief latency possible.</p>",
+      "services": [
+        "管理后台",
+        "官网首页"
+      ],
+      "starts_at": "2026-09-22T17:22:20.073Z",
+      "ends_at": "2026-09-22T17:37:20.073Z",
+      "status": "scheduled"
+    }
+  ]
+}
